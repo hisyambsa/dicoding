@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--=================== Head =====================-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Company hisyambsa</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600,800" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<!--==================== Body ====================-->
+
+<body>
+
+<!--------------------- Header --------------------->
+
+    <header>        
+        <nav id="sideNav">
+            <br><br><br>
+            <ul>
+                <li><a href="#home">ABOUT</a></li>
+                <li><a href="#galeri">PROSES PENGEMBANGAN</a></li>
+                <li><a href="#tentang">QUOTES</a></li>
+                <li><a href="#creator">KONTAK KAMI</a></li>
+            </ul>
+        </nav>
+        <div class="" id="menuBtn">
+            <i class="fas fa-bars fa-2x"></i>
+        </div>
+    </header>
+
+<!---------------------- Main ----------------------->
+
+    <main>
+
+<!--******************** Home **********************-->
+        
+        <article id="home">
+            <br><br>
+            <br><br>
+            <br><br>
+            <div class="container">
+                <div class="home-text">
+                    <img src="assets/images/logo.png" class="logo">
+                    <br><br>
+                    <h1>WEB-APPS DEVELOPER & THAT'S IT</h1>
+                    <br><br>
+                    <h2>About Me</h2>
+                    <h5>
+                        Seniman yang otaknya tidak pernah diam <br>
+selalu belajar hal baru
+selagi diberi waktu dan mau. <br>
+semua akan menjadi Bisa
+                    </h5>
+                    <a href="#galeri">
+                        <button id="homeBtn">More...</button>
+                    </a>                    
+                </div>
+            </div>            
+        </article>
+
+<!--****************** Galeri ***********************-->
+        
+        <article id="galeri">
+            <div class="galeri-text">
+                <h1>PROSES PENGEMBANGAN APLIKASI</h1>
+                <p>
+                    Banyak jenis tahapan untuk proses pengembangan aplikasi. Jenis tahapan juga tergantung dari aplikasi yang akan dibuat. Tahapan berikut adalah yang biasa saya gunakan dan yang paling sederhana.
+                </p>
+            </div>
+            <div class="galeri-row">
+                <div class="galeri-col card">                    
+                   <i class="fas fa-search fa-3x" aria-hidden="true"></i>
+                   <h4>Analisa</h4>
+                   <p>
+                       Analisa kebutuhan pengguna. meliputi jenis server yang digunakan, fitur aplikasi, biaya yang dikeluarkan hingga pemeliharaannya
+                    </p>
+                </div>
+                <div class="galeri-col card">
+                    <i class="fas fa-pencil-alt fa-3x" aria-hidden="true"></i>
+                    <h4>Desain</h4>
+                    <p>
+                        Desain aplikasi adalah tahapan melihat aplikasi yang akan digunakan pengguna. Desain dapat terdiri mockup atau prototype langsung dalam bentuk aplikasi.
+                    </p>
+                </div>
+                <div class="galeri-col card">
+                    <i class="fas fa-code fa-3x" aria-hidden="true"></i>
+                    <h4>Implementasi</h4>
+                    <p>
+                        Tahapan ini adalah membangun aplikasi sesuai dengan desain dan kebutuhan pengguna.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+
+<!--***************** Tentang ******************-->
+        
+        <article id="tentang">
+            <div class="tentang-left-col">
+                <img src="assets/images/tentang-kami.png">
+            </div>
+            <div class="tentang-right-col">
+                <div class="tentang-text">
+                    <h1>Quotes</h1>
+                    <h2>"A program is never less than 90% complete, and never more than 95% complete."</h2>
+                    <h3>Terry Baker</h3>
+                </div>                
+            </div>            
+        </article>               
+        
+    </main>
+
+<!---------------------- Aside ---------------------->
+
+    <aside id="creator">
+        <article class="profile cardProfile">
+            <header>
+                <h3>Contact Me!</h3><br>
+                <figure>
+                    <img src="assets/images/profile.jpg">
+                </figure>
+                <br><h3>Hisyam Husein</h3>
+                <h6><a href="https://hisyambsa.github.io/" target="_blank" rel="noopener noreferrer">hisyambsa.github.io</a></h6><br>
+            </header>
+            <section>
+                <div>                    
+                    <h3>Email</h3>
+                    <h5>hisyam.husein@gmail.com</h5>   
+                </div>
+                <div>                    
+                    <h6>Bergabung sejak 16 Jun 2020</h6>
+                    <h6>Kota Depok, Jawa Barat</h6>   
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div>                    
+                    <h3>Handphone</h3>
+                    <h5><a href="https://api.whatsapp.com/send?phone=6281905096842" target="_blank" rel="noopener noreferrer">081905096842 WA only</a></h5>   
+                </div>
+            </section>
+        </article>
+        
+    </aside>
+
+<!--------------------- Footer ----------------------->
+
+    <footer>  
+        <section id="footer" style="text-align: center;">
+            © 2020 alright reserved | @hisyambsa
+        </section>
+    </footer>
+
+
+<!------------------- Script --------------------->
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        var homeBtn = document.getElementById("homeBtn")
+
+        sideNav.style.left = "-250px";
+        menuBtn.onclick = function () {
+            if (sideNav.style.left == "-250px") {
+                sideNav.style.left = "0";
+            }
+            else {
+                sideNav.style.left = "-250px";
+            }
+        }
+        var scroll = new SmoothScroll('a[href*="#"', {
+            speed: 1000,
+            speedAsDuration: true
+        });
+    </script>
+
+</body>
+
+</html>
